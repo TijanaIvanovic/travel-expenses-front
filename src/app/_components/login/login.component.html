@@ -1,0 +1,14 @@
+<div class="login-form full-center shadow rounded border">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control shadow-sm" placeholder="Enter username" formControlName="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control shadow-sm" placeholder="Password" formControlName="password">
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+    <a class="register btn btn-outline-primary shadow-sm" routerLink="/register">Register</a>
+  </form>
+</div>

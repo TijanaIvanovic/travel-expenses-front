@@ -1,0 +1,17 @@
+[{
+    "id": 1,
+    "name": "ongoing"
+  },
+  {
+    "id": 2,
+    "name": "upcoming"
+  },
+  {
+    "id": 3,
+    "name": "finished"
+  },
+  {
+    "id": 4,
+    "name": "canceled"
+  }
+]

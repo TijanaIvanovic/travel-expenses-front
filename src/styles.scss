@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+body::-webkit-scrollbar-thumb {
+  width: 2px;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif !important;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.full-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form {
+  width: 30%;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ng-touched.ng-valid {
+  transition: 0.3s;
+  border: 1px solid #28a745;
+}
+
+.ng-touched.ng-invalid {
+  transition: 0.3s;
+  border: 1px solid #dc3545;
+}
+
+form {
+  border: 1px solid transparent !important;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transform: scale(1.7);
+  outline: none;
+}
+
+.shadow-very-very-big {
+  box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.65) !important;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.active-my {
+  background-color: #007bff;
+  color: #fff !important;
+  cursor: pointer !important;
+}
+
+.inactive {
+  background-color: transparent;
+  color: #007bff !important;
+  cursor: pointer !important;
+
+  &:hover {
+    background-color: transparent;
+    color: #fff !important;
+    cursor: pointer !important;
+  }
+}
+
+.display-block {
+  display: block;
+}
+
+.info-message {
+  color: #28a745;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

@@ -1,0 +1,80 @@
+<div class="jumbotron shadow border bg-light full-center destinations" [@destinationDimAnimation]="animationTrigger">
+  <h1 class="display-4">Destinations</h1>
+  <h4>Destination details</h4>
+  <hr class="my-4">
+  <table class="table table-sm table-destinations table-bordered">
+    <thead class="thead-dark rounded">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">City</th>
+        <th scope="col">ZipCode</th>
+        <th scope="col">Wage</th>
+      </tr>
+    </thead>
+    <tbody class="table-body shadow-sm">
+      <tr *ngFor="let destination of destinations;let i = index" (click)="onDestination(i)">
+        <th scope="row">{{i+1}}</th>
+        <td>{{destination.city}}</td>
+        <td>{{destination.zipCode}}</td>
+        <td>{{destination.currentWage}}</td>
+      </tr>
+    </tbody>
+    <button type="button" class="btn btn-primary add" (click)="onNewDestinations(city)">{{addButtonCaption}}</button>
+  </table>
+
+  <form [formGroup]="destinationForm" (ngSubmit)="onSave()">
+    <table class="table table-sm table-new-destination" [@newDestinationAnimation]="newDestinationTrigger">
+      <tbody class="table-body">
+        <tr>
+          <th class="flex" scope="row"><button type="submit" class="btn btn-primary margin-left-auto" [disabled]="!destinationForm.valid">Save</button></th>
+          <td><input #city type="text" class="form-control shadow-sm" placeholder="City" formControlName="city"></td>
+          <td><input type="text" class="form-control shadow-sm" placeholder="ZipCode" formControlName="zipCode"></td>
+          <td><input type="text" class="form-control shadow-sm" placeholder="Wage" formControlName="wage"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <p class="lead info-message" *ngIf="infoMessageShow">Destination saved!</p>
+</div>
+
+<div class="jumbotron border bg-light full-center destinations shadow-very-very-big" [@destinationAnimation]="animationTrigger">
+  <button type="button" class="close" aria-label="Close" (click)="onCloseDestination()">
+    <span aria-hidden="true">&#8600;</span>
+  </button>
+  <h1 class="display-4">Destination #{{destination.id}}</h1>
+  <h4>Destination details</h4>
+  <hr class="my-4">
+  <div class="row ">
+    <div class="col-sm-6 border-right">
+      <p class="lead">City: {{destination.city}}</p>
+      <p class="lead">ZipCode:{{destination.zipCode}}</p>
+      <p class="lead">Wage: {{destination.currentWage}}</p>
+      <form [formGroup]="wageForm" (ngSubmit)="onWageChange()" class="form-inline" *ngIf="true">
+        <label class="my-1 mr-2 lead" for="inlineFormCustomSelectPref">New wage:</label>
+        <input type="text" class="form-control shadow-sm" placeholder="Wage" formControlName='amount'>
+        <button type="submit" class="btn btn-primary ml-2" [disabled]="wageForm.invalid">Change</button>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <p class="lead">Wage change history</p>
+      <table class="table table-sm table-destinations table-bordered">
+        <thead class="thead-dark rounded">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Start date</th>
+            <th scope="col">End date</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody class="table-body shadow-sm">
+          <tr *ngFor="let wage of destination.wages;let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{wage.startDate}}</td>
+            <td>{{wage.endDate}}</td>
+            <td>{{wage.amount}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

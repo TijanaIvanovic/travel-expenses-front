@@ -1,0 +1,42 @@
+<nav class="navbar navbar-dark bg-primary shadow border-bottom">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/images/eng.png" width="30" height="30" class="d-inline-block align-top rounded shadow-sm" alt="">
+    Business trips
+  </a>
+
+  <div class="dropdown">
+    <button (click)="onDropdownMenu()" *ngIf="userMenu" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{username}}
+    </button>
+  </div>
+  <div class="dropdown-menu dropdown-menu-x display-block shadow" aria-labelledby="dropdownMenu2" [@dropdownAnimation]="animationTrigger">
+    <button class="dropdown-item" type="button" (click)="onUserInfo()">Info</button>
+    <button class="dropdown-item" type="button" (click)="onCredentials()">Credentials</button>
+    <div class="dropdown-divider"></div>
+    <button class="dropdown-item" type="button" (click)="onLogout()">Logout</button>
+  </div>
+</nav>
+
+<div class="container-fluid container-main" (click)="closeDropdownMenu()">
+  <div class="row">
+    <div class="col-sm-2 border-right bg-light" *ngIf="adminMenu">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" role="tab" aria-controls="v-pills-home"
+          aria-selected="true" routerLink="/allemployees" routerLinkActive="active">Employees</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" routerLinkActive="active" role="tab"
+          aria-controls="v-pills-profile" aria-selected="false" routerLink="/businesstrips" routerLinkActive="active">Business
+          Trips</a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" routerLinkActive="active" role="tab"
+          aria-controls="v-pills-messages" aria-selected="false" routerLink="/destinations" routerLinkActive="active">Destinations</a>
+      </div>
+    </div>
+    <div class="col-sm-10" [ngClass]="{'col-sm-12': !adminMenu, 'col-sm-10':adminMenu}" [@routingAnimation]="o.isActivated ? o.activatedRoute : ''">
+      <router-outlet #o="outlet"></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer class="footer bg-dark">
+  <span class="">&copy; Engineering Software Lab d.o.o.</span>
+</footer>

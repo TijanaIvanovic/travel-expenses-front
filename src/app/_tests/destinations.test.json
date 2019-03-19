@@ -1,0 +1,691 @@
+[{
+    "id": 1,
+    "city": "Belgrade",
+    "zipCode": 11000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 2,
+    "city": "Nis",
+    "zipCode": 22000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 3,
+    "city": "Sabac",
+    "zipCode": 15000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "10.1.2019",
+        "endDate": "",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 4,
+    "city": "Nis",
+    "zipCode": 22000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 5,
+    "city": "Kragujevac",
+    "zipCode": 25600,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "5.9.2017",
+        "endDate": "8.2.2019",
+        "amount": 53
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 6,
+    "city": "Krusevac",
+    "zipCode": 181000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2019",
+        "endDate": "12.2.2019",
+        "amount": 30
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 7,
+    "city": "Belgrade",
+    "zipCode": 11000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2019",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 8,
+    "city": "Belgrade",
+    "zipCode": 11000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2019",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 9,
+    "city": "Nis",
+    "zipCode": 22000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 10,
+    "city": "Belgrade",
+    "zipCode": 11000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2019",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "city": "Belgrade",
+    "zipCode": 11000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 12,
+    "city": "Nis",
+    "zipCode": 22000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 13,
+    "city": "Sabac",
+    "zipCode": 15000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "10.1.2019",
+        "endDate": "",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 14,
+    "city": "Nis",
+    "zipCode": 22000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 15,
+    "city": "Kragujevac",
+    "zipCode": 25600,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "5.9.2017",
+        "endDate": "8.2.2019",
+        "amount": 53
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 16,
+    "city": "Krusevac",
+    "zipCode": 181000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2019",
+        "endDate": "12.2.2019",
+        "amount": 30
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 17,
+    "city": "Belgrade",
+    "zipCode": 11000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2019",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 18,
+    "city": "Belgrade",
+    "zipCode": 11000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2019",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 19,
+    "city": "Nis",
+    "zipCode": 22000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }, {
+    "id": 20,
+    "city": "Belgrade",
+    "zipCode": 11000,
+    "currentWage": 44,
+    "wages": [{
+        "startDate": "12.2.2019",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      },
+      {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }, {
+        "startDate": "12.2.2018",
+        "endDate": "12.2.2019",
+        "amount": 50
+      }
+    ]
+  }
+]

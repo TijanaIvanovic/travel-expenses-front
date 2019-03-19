@@ -1,0 +1,71 @@
+<div class="jumbotron shadow border bg-light full-center employee"  [@employeeAnimation]="animationTrigger">
+  <h1 class="display-4">Employees</h1>
+  <h4> List of employees</h4>
+  <hr class="my-4">
+  <table class="table table-business-trips   table-bordered position-relative">
+    <thead class="thead-dark rounded">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Role</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody class="table-body shadow-sm">
+      <tr *ngFor="let employee of allEmployees;let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{employee.firstname}}</td>
+        <td>{{employee.lastname}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.role | role}}</td>
+        <td>Active</td>
+      </tr>
+    </tbody>
+    <button type="button" class="btn btn-primary add" (click)="onAddEmployee()" [disabled]="animationTrigger === 'open'">Add
+      new</button>
+  </table>
+  
+</div>
+
+
+
+<div class="jumbotron border bg-light full-center  new-business-trip shadow-very-very-big" [@newBusinessTripAnimation]="animationTrigger">
+  <button type="button" class="close" aria-label="Close" (click)="onCloseAddEmployee()">
+    <span aria-hidden="true">&#8600;</span>
+  </button>
+  <h1 class="display-4">Add employee</h1>
+  <h4>Add employee details to save</h4>
+  <hr class="my-4">
+
+  <form [formGroup]="newEmployeeForm" (ngSubmit)="save()">
+    <div class="form-group">
+      <label class="my-1 mr-2 lead" for="inlineFormCustomSelectPref">First ame:</label>
+      <input type="text" class="form-control shadow-sm" placeholder="First name" formControlName="firstName">
+    </div>
+    <div class="form-group">
+      <label class="my-1 mr-2 lead" for="inlineFormCustomSelectPref">Last name:</label>
+      <input type="text" class="form-control shadow-sm" placeholder="Last name" formControlName="lastName">
+    </div>
+    <div class="form-group">
+      <label class="my-1 mr-2 lead" for="inlineFormCustomSelectPref">Email:</label>
+      <input type="text" class="form-control shadow-sm" placeholder="Email" formControlName="email">
+    </div>
+    <div class="form-group form-inline">
+      <label class="my-1 mr-2 lead" for="inlineFormCustomSelectPref">Role:</label>
+      <select (change)="x()" class="custom-select my-1 mr-sm-2 shadow-sm" id="inlineFormCustomSelectPref" formControlName="role">
+        <option [value]="ind" *ngFor="let role of roles;let ind = index">
+          {{role.name}}
+        </option>
+      </select>
+    </div>
+    <hr class="my-4">
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-primary ml-3" (click)="onCloseAddEmployee()">Cancel</button>
+  </form>
+
+</div>
+
+ 
+

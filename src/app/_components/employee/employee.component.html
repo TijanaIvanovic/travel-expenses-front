@@ -1,0 +1,118 @@
+<div class="jumbotron shadow border bg-light full-center employee" [@employeeAnimation]="businessTripTrigger">
+  <h1 class="display-4">Hello, {{employee.username}}!</h1>
+  <h4>Account information.</h4>
+  <hr class="my-4">
+  <div class="row">
+    <div class="col-sm-6">
+      <p class="lead">First name: {{employee.firstName}}</p>
+      <p class="lead">Last name: {{employee.lastName}}</p>
+      <p class="lead">Email: {{employee.email}}</p>
+    </div>
+    <div class="col-sm-6 border-left" *ngIf="false">
+      <form class="form-inline">
+        <label class="lead my-1 mr-2" for="inlineFormCustomSelectPref">Status:</label>
+        <select class="custom-select my-1 mr-sm-2 shadow-sm" id="inlineFormCustomSelectPref">
+          <option value="1">Active</option>
+          <option value="2">Former</option>
+        </select>
+        <button type="submit" class="btn btn-primary my-1">Change</button>
+      </form>
+      <form class="form-inline">
+        <label class=" lead my-1 mr-2" for="inlineFormCustomSelectPref">Authorisation Level:</label>
+        <select class="custom-select my-1 mr-sm-2 shadow-sm" id="inlineFormCustomSelectPref">
+          <option value="1">User</option>
+          <option value="2">Admin</option>
+        </select>
+        <button type="submit" class="btn btn-primary my-1">Change</button>
+      </form>
+    </div>
+  </div>
+
+  <hr class="my-4">
+  <h4>Business trips history</h4>
+  <hr class="my-4">
+  <div class="table-container">
+    <table class="table table-business-trips   table-bordered">
+      <thead class="thead-dark rounded">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Destination</th>
+          <th scope="col">Start date</th>
+          <th scope="col">End date</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody class="table-body shadow-sm">
+        <tr *ngFor="let businessTrip of employee.businessTrips" (click)="onBusinessTrip(businessTrip)">
+          <th scope="row">{{businessTrip.id}}</th>
+          <td>{{businessTrip.destination.city}}</td>
+          <td>{{businessTrip.startDate}}</td>
+          <td>{{businessTrip.endDate}}</td>
+          <td><span class="uppercase" [ngStyle]="{'color': statusColor(businessTrip.status)}">{{businessTrip.status}}</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- businessTrip -->
+<div class="jumbotron full-center shadow shadow-very-very-big border bg-light business-trip" [@businessTripAnimation]="businessTripTrigger">
+  <button type="button" class="close" aria-label="Close" (click)="onCloseBusinessTrip()">
+    <span aria-hidden="true">&#8600;</span>
+  </button>
+  <h1 class="display-4">Business trip information.</h1>
+  <hr class="my-4">
+  <div class="row ">
+    <div class="col-sm-6 border-right">
+      <p class="lead">Destination:</p>
+      <div class="pl-3 flex ">
+        <p class="lead">City: {{currentBusinessTrip.destination.city}}</p>
+        <p class="lead ml-2">Wage: {{currentBusinessTrip.destination.currentWage}}</p>
+      </div>
+      <p class="lead">Start date: {{currentBusinessTrip.startDate}}</p>
+      <p class="lead">End date: {{currentBusinessTrip.endDate}}</p>
+    </div>
+    <div class="col-sm-6">
+      <p class="lead">Total spent: {{currentBusinessTripTotalBill}}$</p>
+      <p class="lead" *ngIf="true">Status: <span class="uppercase" [ngStyle]="{'color': color}">{{statuses[currentBusinessTrip.status
+          - 1]}}</span></p>
+      <!-- <form [formGroup]="statusForm" (ngSubmit)="changeStatus()" class="form-inline" *ngIf="true">
+        <label class="my-1 mr-2 lead" for="inlineFormCustomSelectPref">Status:</label>
+        <select #select (change)="statusColor(currentBusinessTrip.status, select)" [ngStyle]="{'color': statusColor(currentBusinessTrip.status)}"
+          class="uppercase custom-select my-1 mr-sm-2 shadow-sm" id="inlineFormCustomSelectPref" formControlName="status">
+          <option #option class="uppercase" [value]="tripStatuses[ind].id" *ngFor="let status of tripStatuses;let ind = index"
+            [selected]="currentBusinessTrip.status === status.name" (click)="selectStatus(status)" [ngStyle]="{'color': statusColor(status.name)}">
+            {{status.name}}
+          </option>
+        </select>
+        <button type="submit" class="btn btn-primary my-1" [disabled]="statusForm.invalid">Change</button>
+      </form> -->
+    </div>
+  </div>
+  <hr class="my-4">
+  <h4>Bills history</h4>
+  <hr class="my-4">
+  <div class="card-row border-left border-right">
+    <div class=" bill-card " *ngFor="let bill of currentBusinessTrip.bills;let i=index">
+      <div class="card-header rounded shadow border">
+        <b>#{{i+1}}&nbsp;Bill total:&nbsp;{{currentBusinessTripBillItemsTotal[i]}}$</b>
+      </div>
+      <table class="table-bills table table-sm table-bordered shadow">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Cost</th>
+          </tr>
+        </thead>
+        <tbody class="table-body">
+          <tr *ngFor="let billItem of bill.billItems;let i=index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{billItem.name}}</td>
+            <td>{{billItem.cost}}$</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
